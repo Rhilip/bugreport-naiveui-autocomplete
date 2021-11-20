@@ -30,18 +30,22 @@ watch(valueRef2, () => {
   }, 1e3)
 })
 
+function handleSearch(value) {
+  console.log(value)
+}
+
 </script>
 
 <template>
   <div style="width: 480px; margin: 10px">
     AutoComplete Which options label is NTag
-    <n-auto-complete :options="optionsRef1" v-model:value="valueRef1">
+    <n-auto-complete :options="optionsRef1" v-model:value="valueRef1" @select="handleSearch">
     </n-auto-complete>
 
     <n-hr />
 
     AutoComplete Which options use render is NTag
-    <n-auto-complete :options="optionsRef2" v-model:value="valueRef2">
+    <n-auto-complete :options="optionsRef2" v-model:value="valueRef2" @select="handleSearch">
     </n-auto-complete>
   </div>
 </template>
