@@ -1,5 +1,7 @@
 # bug-report
 
+For https://github.com/TuSimple/naive-ui/issues/1629
+
 ## Project setup
 ```
 yarn install
